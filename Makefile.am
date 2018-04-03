@@ -153,7 +153,7 @@ if WITH_RDYNAMIC
 AM_LDFLAGS = -rdynamic
 endif
 
-AM_CFLAGS += -Wno-long-long -Wall -W -Wnested-externs -Wformat=2
+AM_CFLAGS += -Wno-long-long -Wall -Werror
 AM_CFLAGS += -Wmissing-prototypes -Wstrict-prototypes -Wmissing-declarations
 AM_CFLAGS += -Wwrite-strings -Wshadow -Wpointer-arith -Wsign-compare
 AM_CFLAGS += -Wbad-function-cast -Winline -Wcast-align -Wextra
